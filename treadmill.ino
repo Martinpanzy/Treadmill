@@ -34,7 +34,7 @@ void setup(){
   Serial.println("#                              Treadmill Hack                               #");
   Serial.println("#                          Model: PRO-FORM 450 CX                           #");
   Serial.println("# Serial command:                                                           #");
-  Serial.println("#   to raise or lower the slope of the treadmill:                           #");
+  Serial.println("#   to raise or lower the treadmill:                                        #");
   Serial.println("#      send \"up\" or \"dn\"                                                #");
   Serial.println("#   to set new PWM value:                                                   #");
   Serial.println("#      send \"p<pwm>\", where \"<pwm>\" is an integer in the range of 0 to 49   #");
