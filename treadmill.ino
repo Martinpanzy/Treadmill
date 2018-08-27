@@ -1,5 +1,5 @@
 #define PWM_PIN 10  // PWM signal
-#define SLOPE_UP_PIN 9
+#define SLOPE_UP_PIN 9 
 #define SLOPE_DN_PIN 6
 int pwm = 0;
 
@@ -11,13 +11,13 @@ void parse_command(String command, int&pwm){
    }
    else if((command == "up") || (command == "UP")){
      Serial.print("Inclination Up");
-     digitalWrite(SLOPE_UP_PIN, HIGH);
+     digitalWrite(SLOPE_UP_PIN, HIGH); //a 2.5-second high signal will be sent out from SLOPE_UP_PIN
      delay(2500);
      digitalWrite(SLOPE_UP_PIN, LOW);
    }
    else if((command == "dn") || (command == "DN")){
      Serial.print("Inclination Down");
-     digitalWrite(SLOPE_DN_PIN, HIGH);
+     digitalWrite(SLOPE_DN_PIN, HIGH); //a 2.5-second high signal will be sent out from SLOPE_DN_PIN
      delay(2500);
      digitalWrite(SLOPE_DN_PIN, LOW);
    }
